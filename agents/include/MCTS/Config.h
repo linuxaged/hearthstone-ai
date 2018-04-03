@@ -51,7 +51,7 @@ namespace mcts
 	// Thread safety: Yes
 	class Config {
 	public:
-		Config() : neural_net_path_() {}
+		Config() {}
 
 		void SetNeuralNetPath(std::string const& filename, bool is_random = false) {
 			neural_net_path_ = filename;
@@ -62,7 +62,7 @@ namespace mcts
 
 		
 	private:
-		std::string neural_net_path_;
-		bool neural_net_is_random_;
+		std::string neural_net_path_ = {};
+		bool neural_net_is_random_ = {};
 	};
 }

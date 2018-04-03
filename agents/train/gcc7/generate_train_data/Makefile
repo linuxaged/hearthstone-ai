@@ -1,4 +1,4 @@
-CXX=g++-7.2
+CXX=g++
 CFLAGS=-std=c++17
 CFLAGS_OWN_SRC += -Wall -Wextra -Wpedantic \
 									-Wno-implicit-fallthrough \
